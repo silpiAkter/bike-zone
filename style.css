@@ -1,0 +1,22 @@
+.btn-sec{
+    color: #E76F51;
+    background: white;
+    border:2px solid #E76F51;
+    border-radius: 10px;
+    padding: 10px 13px;
+}
+
+.btn-sec:hover{
+    color: #fff;
+    background: #E76F51;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #E76F51;
+    border:2px solid #E76F51;
+    border-radius: 10px;
+}
+.mask-sec{
+    background: orange;
+}

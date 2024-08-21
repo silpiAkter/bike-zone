@@ -11,19 +11,36 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/f89ab922a5.js" crossorigin="anonymous"></script>
     <style>
+
         .poppins {
         font-family: "Poppins", sans-serif;
         font-weight: 100;
         font-style: normal;
         }
+
         .bg-color{
             background: #E76F51;
         }
     </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              red: '#E76F51',
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body class="poppins">
-    <header class="max-w-6xl mx-auto">
+    <header class="max-w-7xl mx-auto">
         <nav>
             <div class="navbar bg-base-100 justify-between">
                 <div class="navbar-start">
@@ -134,7 +151,7 @@
               </div>
         </div>
     </header>
-    <main class="max-w-6xl mx-auto">
+    <main class="max-w-7xl mx-auto">
         <section class="my-12 mx-auto">
             <!-- Fetured Bikes -->
         <div class="text-center space-y-3">
@@ -184,7 +201,7 @@
                 <h2 class="card-title">Ducati XDIAVEL S-73</h2>
                 <p  class="text-slate-600 font-normal text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
                 <div class="card-actions">
-                  <button class="btn bg-color text-white">Read More</button>
+                  <button class="btn-sec text-base font-medium">Read More</button>
                 </div>
               </div>
             </div>
@@ -199,8 +216,89 @@
                 <h2 class="card-title">Ducati XDIAVEL S-73</h2>
                 <p  class="text-slate-600 font-normal text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
                 <div class="card-actions">
-                  <button class="btn bg-color text-white">Read More</button>
+                  <button class="btn-sec text-base font-medium">Read More</button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- happy client -->
+        <section class="mx-auto my-12 space-y-12">
+          <h3 class="text-5xl font-semibold text-center text-slate-900">Happy <span class="text-red">Clients says</span></h3>
+          <div class="my-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto">
+            <!-- card-1 -->
+            <div class="card bg-base-100 w-96 shadow-xl my-5 mx-auto p-7">
+              <div class="avatar pt-5">
+                <div class="w-24 mx-auto rounded-full">
+                  <img src="images/others/user-1.png" />
+                </div>
+              </div>
+              <div class="card-body items-center text-center">
+                <p class="text-slate-600 font-normal text-base text-center">Slate helps you see how 
+                  many more days you need 
+                  to work to reach your financial 
+                  goal for the month and year.</p>
+                  <div class="rating grid grid-cols-1 space-y-3">
+                    <div>
+                      <i class="fa-solid fa-star text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star  text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star  text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star  text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star-half-stroke  text-orange-500 font-bold text-lg"></i>
+                    </div>
+                    <p class="text-cyan-500 font-medium text-sm">Regina Miles</p>
+                  </div>
+                <h2 class="card-title">Banker</h2>
+              </div>
+            </div>
+            <!-- card-2 -->
+            <div class="card bg-base-100 w-96 shadow-xl my-5 mx-auto p-7">
+              <div class="avatar pt-5">
+                <div class="w-24 mx-auto rounded-full">
+                  <img src="images/others/user-2.png" />
+                </div>
+              </div>
+              <div class="card-body items-center text-center">
+                <p class="text-slate-600 font-normal text-base text-center">Slate helps you see how 
+                  many more days you need 
+                  to work to reach your financial 
+                  goal for the month and year.</p>
+                  <div class="rating grid grid-cols-1 space-y-3">
+                    <div>
+                      <i class="fa-solid fa-star text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star  text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star  text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star  text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star-half-stroke  text-orange-500 font-bold text-lg"></i>
+                    </div>
+                    <p class="text-cyan-500 font-medium text-sm">Regina Miles</p>
+                  </div>
+                <h2 class="card-title">Banker</h2>
+              </div>
+            </div>
+            <!-- card-3 -->
+            <div class="card bg-base-100 w-96 shadow-xl my-5 mx-auto p-7">
+              <div class="avatar pt-5">
+                <div class="w-24 mx-auto rounded-full">
+                  <img src="images/others/user-3.png" />
+                </div>
+              </div>
+              <div class="card-body items-center text-center">
+                <p class="text-slate-600 font-normal text-base text-center">Slate helps you see how 
+                  many more days you need 
+                  to work to reach your financial 
+                  goal for the month and year.</p>
+                  <div class="rating grid grid-cols-1 space-y-3">
+                    <div>
+                      <i class="fa-solid fa-star text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star  text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star  text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star  text-orange-500 font-bold text-lg"></i>
+                      <i class="fa-solid fa-star-half-stroke  text-orange-500 font-bold text-lg"></i>
+                    </div>
+                    <p class="text-cyan-500 font-medium text-sm">Regina Miles</p>
+                  </div>
+                <h2 class="card-title">Banker</h2>
               </div>
             </div>
           </div>
